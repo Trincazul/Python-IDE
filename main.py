@@ -21,15 +21,15 @@ window.title('Python IDE')
 OPEN_FILE = '_main.py'
 
 TOOLBAR_HEIGHT = 40
-TOOLBAR_ITEM_WIDTH = 1 
+TOOLBAR_ITEM_WIDTH = 2
 TOOLBAR_COLOR = '#0e1525'
 TOOLBAR_TEXT_COLOR = '#FFFFFF'
-TOOLBAR_FONT_SIZE = '7'
+TOOLBAR_FONT_SIZE = '8'
 TOOLBAR_FONT = tkFont.Font(family='Terminal', size=TOOLBAR_FONT_SIZE)
 TOOLBAR_DROPDOWN_COLOR = '#3f495f'
 
 EDITOR_BG_COLOR = '#1c2333'
-EDITOR_FONT_SIZE = '8'
+EDITOR_FONT_SIZE = '12'
 EDITOR_FONT = tkFont.Font(family='Terminal', size=EDITOR_FONT_SIZE)
 EDITOR_FONT_COLOR = '#FFFFFF'
 EDITOR_CURSOR_COLOR = '#0079f2'
@@ -59,7 +59,7 @@ SYNTAX_STRING_COLOR = '#dea670'
 
 MISC_DIVIDER_THICKNESS = 10
 MISC_TAB_WIDTH = 2
-MISC_FULLSCREEN = True
+MISC_FULLSCREEN = False
 MISC_AUTOINDENT = True
 
 UPDATE_LINE_FREQ = 100#ms
@@ -184,21 +184,21 @@ def save_as():
 toolbar = tk.Menu(master=window, bg=TOOLBAR_COLOR, bd=0, fg=TOOLBAR_TEXT_COLOR, font=TOOLBAR_FONT)
 
 toolbar_file_button = tk.Menu(toolbar, tearoff=0,bg=TOOLBAR_DROPDOWN_COLOR,bd=0,font=TOOLBAR_FONT)
-toolbar_file_button.add_command(label="New", command=None)
-toolbar_file_button.add_command(label="Open", command=open_file)
-toolbar_file_button.add_command(label="Save", command=save)
-toolbar_file_button.add_command(label="Save as...", command=save_as)
-toolbar_file_button.add_command(label="Close", command=None)
+toolbar_file_button.add_command(label="Novo", command=None)
+toolbar_file_button.add_command(label="Abrir", command=open_file)
+toolbar_file_button.add_command(label="Salvar", command=save)
+toolbar_file_button.add_command(label="Salvar Como", command=save_as)
+toolbar_file_button.add_command(label="Fechar", command=None)
 toolbar_file_button.add_separator()
-toolbar_file_button.add_command(label="Exit", command=save_and_close)
-toolbar.add_cascade(label="File", menu=toolbar_file_button)
+toolbar_file_button.add_command(label="Sair", command=save_and_close)
+toolbar.add_cascade(label="Arquivo", menu=toolbar_file_button)
 
 toolbar_edit_button = tk.Menu(toolbar, tearoff=0,bg=TOOLBAR_DROPDOWN_COLOR,bd=0,font=TOOLBAR_FONT)
-toolbar.add_cascade(label="Edit", menu=toolbar_edit_button)
+toolbar.add_cascade(label="Editar", menu=toolbar_edit_button)
 
 toolbar_run_button = tk.Menu(toolbar, tearoff=0,bg=TOOLBAR_DROPDOWN_COLOR,bd=0,font=TOOLBAR_FONT)
 toolbar_run_button.add_separator()
-toolbar_run_button.add_command(label="Run Program", command=run)
+toolbar_run_button.add_command(label="Run Programa", command=run)
 toolbar.add_cascade(label="Run", menu=toolbar_run_button)
 
 window.config(menu=toolbar)
@@ -263,7 +263,7 @@ window.after(UPDATE_LINE_FREQ,update_line_counter)
 # -------------------------- # output # -------------------------- #
 output_container = tk.LabelFrame(master=edit_and_out_master, bg=OUTPUT_BG_COLOR,highlightthickness=0,bd=0)
 output_scrollbar = tk.Scrollbar(master=output_container,bd=0, borderwidth=0,
-    troughcolor=OUTPUT_BG_COLOR,highlightthickness=0,
+    troughcolor=OUTPUT_BG_COLOR,highlightthickness=1,
     bg=OUTPUT_SCROLLBAR_COLOR, relief='flat')
 output_scrollbar.pack(side='right',fill='y')
 dragbar = tk.Frame(master=edit_and_out_master,bg=TOOLBAR_COLOR,highlightthickness=0,bd=0,height=MISC_DIVIDER_THICKNESS)
@@ -325,9 +325,3 @@ if MISC_FULLSCREEN:
   window.wm_attributes('-fullscreen', True)  
 load()
 window.mainloop()
-
-
-
-
-
-
