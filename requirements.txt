@@ -496,7 +496,7 @@ rfcat==1.9.5
 roman==2.0.0
 Routes==2.5.1
 rq==1.7.0
-rsa==4.0
+rsa==4.7
 rtlsdr-scanner==1.3.2
 ruamel.yaml==0.16.12
 ruamel.yaml.clib==0.2.2
