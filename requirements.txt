@@ -426,7 +426,7 @@ publicsuffix2==2.20191221
 publicsuffixlist==0.7.12
 pyasn1==0.4.8
 pycairo==1.16.2
-pycares==3.1.1
+pycares==4.2.0
 pycparser==2.20
 pycryptodomex==3.9.7
 pycurl==7.43.0.6
