@@ -374,7 +374,7 @@ mate-tweak==21.4.2
 matplotlib==3.3.4
 maxminddb==2.0.3
 mechanize==0.4.5
-mistune==0.8.4
+mistune==2.0.3
 mitmproxy==8.0.0
 more-itertools==4.2.0
 msal==1.17.0
