@@ -553,7 +553,7 @@ WebOb==1.8.6
 websocket-client==0.57.0
 websockets==8.1
 websploit==4.0.4
-Werkzeug==1.0.1
+Werkzeug==2.2.3
 wfuzz==3.1.0
 whois==0.8
 wifite==2.5.8
