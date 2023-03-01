@@ -470,7 +470,7 @@ python-debianbts==3.1.0
 python-docx==0.8.11
 python-gvm==21.10.0
 python-Levenshtein==0.12.2
-python-libnmap==0.7.2
+python-libnmap==0.7.3
 python-magic==0.4.20
 python-magic-ahupp==0.4.13
 python-memcached==1.58
