@@ -484,7 +484,7 @@ PyVirtualDisplay==0.2.1
 pyxdg==0.27
 PyYAML==5.4.1
 qrcode==6.1
-redis==4.5.3
+redis==4.5.4
 reportbug==7.10.3+deb11u1
 repoze.lru==0.7
 requests==2.27.1
