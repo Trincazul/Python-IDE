@@ -307,7 +307,7 @@ ExifRead==2.3.2
 fabric==2.5.0
 filelock==3.6.0
 flasgger==0.9.5
-Flask==1.1.2
+Flask==2.3.2
 Flask-HTTPAuth==3.2.4
 Flask-RESTful==0.3.8
 future==0.18.3
