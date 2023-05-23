@@ -487,7 +487,7 @@ qrcode==6.1
 redis==4.5.4
 reportbug==7.10.3+deb11u1
 repoze.lru==0.7
-requests==2.27.1
+requests==2.31.0
 requests-futures==1.0.0
 requests-oauthlib==1.0.0
 requests-toolbelt==0.9.1
