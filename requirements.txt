@@ -530,7 +530,7 @@ texttable==1.6.3
 theHarvester==4.0.3
 tls-parser==1.2.2
 torbrowser-launcher==0.3.3
-tornado==6.1
+tornado==6.3.2
 torrequest==0.1.0
 tqdm==4.57.0
 traitlets==5.0.5
