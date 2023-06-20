@@ -288,7 +288,7 @@ click==7.1.2
 click-plugins==1.1.1
 colorama==0.4.4
 configobj==5.0.6
-cryptography==39.0.1
+cryptography==41.0.0
 cycler==0.10.0
 dbus-python==1.2.16
 decorator==4.4.2
