@@ -437,7 +437,7 @@ pyenchant==3.2.0
 pygeoip==0.3.2
 pygexf==0.2.2
 PyGithub==1.43.7
-Pygments==2.7.4
+Pygments==2.15.0
 PyGObject==3.38.0
 pygraphviz==1.7
 pyinotify==0.9.6
