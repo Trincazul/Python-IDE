@@ -539,7 +539,7 @@ uamqp==1.2.13
 ufw==0.36
 ujson==5.4.0
 unicodecsv==0.14.1
-urllib3==1.26.5
+urllib3==1.26.17
 urwid==2.1.2
 uvloop==0.14.0
 validators==0.14.2
